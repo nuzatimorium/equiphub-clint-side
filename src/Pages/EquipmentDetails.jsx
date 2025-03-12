@@ -6,7 +6,7 @@ const EquipmentDetails = () => {
     const [equipment, setEquipment] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/equipments/${id}`)
+        fetch(`https://b10-a10-equiphub-server-side.vercel.app/equipments/${id}`)
             .then(res => res.json())
             .then(data => setEquipment(data))
             .catch(err => console.error("Error fetching details:", err));

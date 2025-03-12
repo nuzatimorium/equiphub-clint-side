@@ -8,7 +8,7 @@ const Home = () => {
     const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
     useEffect(() => {
-        fetch("http://localhost:5000/products")  
+        fetch("https://b10-a10-equiphub-server-side.vercel.app/products")  
             .then(res => res.json())
             .then(data => setProducts(data))
             .catch(err => console.error("Error fetching products:", err));

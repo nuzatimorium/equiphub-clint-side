@@ -26,7 +26,7 @@ const UpdateEquipment = () => {
   // Fetch equipment data by ID
   useEffect(() => {
     if (id) {
-      fetch(`http://localhost:5000/equipment/${id}`)
+      fetch(`https://b10-a10-equiphub-server-side.vercel.app/equipment/${id}`)
         .then((res) => res.json())
         .then((data) => setFormData({ ...data, userEmail: user?.email, userName: user?.displayName }))
         .catch((err) => console.error("Error fetching equipment:", err));
@@ -45,7 +45,7 @@ const UpdateEquipment = () => {
     const updatedData = { ...formData };
 
     try {
-      const response = await fetch(`http://localhost:5000/equipment/${id}`, {
+      const response = await fetch(`https://b10-a10-equiphub-server-side.vercel.app/equipment/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedData),

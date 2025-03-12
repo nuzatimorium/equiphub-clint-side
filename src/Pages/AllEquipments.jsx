@@ -7,7 +7,7 @@ const AllEquipments = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost:5000/equipments")
+        fetch("https://b10-a10-equiphub-server-side.vercel.app/equipments")
             .then(res => res.json())
             .then(data => setEquipments(data))
             .catch(err => console.error("Error fetching data:", err));

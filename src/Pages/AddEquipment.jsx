@@ -28,7 +28,7 @@ const AddEquipment = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         
-        const response = await fetch("http://localhost:5000/equipments", {
+        const response = await fetch("https://b10-a10-equiphub-server-side.vercel.app/equipments", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),
