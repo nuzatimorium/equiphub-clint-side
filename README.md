@@ -1,6 +1,6 @@
 # 🏆 Equip Hub - Your Ultimate Sports Equipment Store
 
-🚀 **Live Site:** [Equip Hub Live](https://your-live-site-url.com)
+🚀 **Live Site:** [Equip Hub Live](https://equiphub.netlify.app)
 
 Equip Hub is a modern e-commerce platform where you can explore and purchase high-quality sports equipment with customization options and fast delivery.
 
